@@ -43,8 +43,8 @@ IMG_SIZE = 784
 BATCH_SIZE = 8 * strategy.num_replicas_in_sync
 nb_classes = 2
 
-df = pd.read_csv('/content/drive/MyDrive/SNUBH_AI_project/Xray_OSA/real_data/df2_merge_toy.csv')
-glob_image = glob('/content/drive/MyDrive/SNUBH_AI_project/Xray_OSA/real_data/raw_images_merge/*.jpg')
+df = pd.read_csv('/content/drive/MyDrive/../df2_merge_toy.csv')
+glob_image = glob('/content/drive/MyDrive/../raw_images_merge/*.jpg')
 print(len(glob_image))
 df
 
@@ -88,7 +88,7 @@ df['osa_vec']
 
 df.shape
 
-path='/content/drive/MyDrive/SNUBH_AI_project/Xray_OSA/real_data/raw_images_merge'
+path='/content/drive/MyDrive/../raw_images_merge'
 
 train = df[6]
 # train_id = df[8]
